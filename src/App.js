@@ -19,14 +19,14 @@ const toggleMode =()=>{
     setMode('dark')
     document.body.style.backgroundColor = '#121212'
     showAlert('Enabled DarkMode', 'success')
-    document.title = 'TextUtils - DarkMode'
+    // document.title = 'TextUtils - DarkMode'
 
   }
   else {
     setMode('light')
     document.body.style.backgroundColor = 'white'
     showAlert('Enabled lightMode', 'success')
-    document.title = 'TextUtils - LightMode'
+    // document.title = 'TextUtils - LightMode'
   }
 }
 
@@ -41,7 +41,7 @@ const showAlert = (message, type)=>{
 }
 
   return (
-     <Router> 
+           <Router> 
   <Navbar title="TextUtils" about="Its me about" mode={mode} toggleMode = {toggleMode}/>
   <Alert alert={alert}/>
   <div className="container">

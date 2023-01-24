@@ -3,12 +3,13 @@ import React from 'react'
 export default function About(props) {
 
   return (
-    <div className='container my-5 py-5'  style={{ backgroundColor:props.mode ==='dark'?'grey':'white'}}>
+    <div>
+        <h1 className='my-2' style={{color:props.mode ==='dark'?'white':'black'}}>About us</h1>
       <div className="accordion" id="accordionExample">
-        <div className="accordion-item"  style={{ backgroundColor:props.mode ==='dark'?'grey':'white', color:props.mode ==='dark'?'white':'black', }} >
+        <div className="accordion-item"  style={{ backgroundColor:props.mode ==='dark'?'#31313a':'white', color:props.mode ==='dark'?'white':'black', }} >
             <h2 className="accordion-header" id="headingOne">
-            <button  style={{ backgroundColor:props.mode ==='dark'?'grey':'white', color:props.mode ==='dark'?'white':'black', }} className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Accordion Item #1
+            <button  style={{ backgroundColor:props.mode ==='dark'?'#31313a':'white', color:props.mode ==='dark'?'white':'black', }} className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Why we created it?
             </button>
             </h2>
             <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -17,10 +18,10 @@ export default function About(props) {
             </div>
             </div>
         </div>
-        <div className="accordion-item" style={{ backgroundColor:props.mode ==='dark'?'grey':'white', color:props.mode ==='dark'?'white':'black', }}  >
+        <div className="accordion-item" style={{ backgroundColor:props.mode ==='dark'?'#31313a':'white', color:props.mode ==='dark'?'white':'black', }}  >
             <h2 className="accordion-header" id="headingTwo">
-            <button style={{ backgroundColor:props.mode ==='dark'?'grey':'white', color:props.mode ==='dark'?'white':'black', }}  className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Accordion Item #2
+            <button style={{ backgroundColor:props.mode ==='dark'?'#31313a':'white', color:props.mode ==='dark'?'white':'black', }}  className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            What does it do?
             </button>
             </h2>
             <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -29,10 +30,10 @@ export default function About(props) {
             </div>
             </div>
         </div>
-        <div className="accordion-item"style={{ backgroundColor:props.mode ==='dark'?'grey':'white', color:props.mode ==='dark'?'white':'black', }} >
+        <div className="accordion-item"style={{ backgroundColor:props.mode ==='dark'?'#31313a':'white', color:props.mode ==='dark'?'white':'black', }} >
             <h2 className="accordion-header" id="headingThree">
-            <button style={{ backgroundColor:props.mode ==='dark'?'grey':'white', color:props.mode ==='dark'?'white':'black', }} className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Accordion Item #3
+            <button style={{ backgroundColor:props.mode ==='dark'?'#31313a':'white', color:props.mode ==='dark'?'white':'black', }} className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Why is it different?
             </button>
             </h2>
             <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -42,7 +43,6 @@ export default function About(props) {
             </div>
         </div>
         </div>
-        <button type='button' className='btn btn-primary my-3'>GG</button>
     </div>
   )
 }
